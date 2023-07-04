@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <h1 class="logo">SHIFUKATO</h1>
+            <ul class="menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html">LOGOUT</a></li>
+            </ul>
+        </div>
+
+
+        <!-- form -->
+        <div class="content2">
+            
+            <h3>Formulir Kerjasama</h3>
+
+            <div class="form">
+                <form method="post" id="formulir">
+                    <label for="nama">Nama</label>
+                    <input type="text" name="nama" id="nama" required placeholder="Nama anda">
+
+                    <!--  -->
+                    <label for="alamat">Alamat</label>
+                    <input type="text" name="alamat" id="alamat" required placeholder="Alamat">
+                    
+
+                    <!--  -->
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required placeholder="Email">
+
+                    <!--  -->
+                    <label for="perusahaan">Perusahaan</label>
+                    <input type="text" name="perusahaan" id="perusahaan" required placeholder="Perusahaan">
+
+                    <!--  -->
+                    <label for="layanan">Pilih layanan anda</label>
+                    <select name="layanan" id="layanan" required >
+                        <option value="blank">--Plih Layanan--</option>
+                        <option value="Installasi Kabel">Installasi jaringan</option>
+                        <option value="Installasi WI-FI">Installasi WI-FI</option>
+                        <option value="Installasi CCTV">Installasi CCTV</option>
+                        <option value="Installasi Server">Installasi Server</option>
+                        <option value="Installasi VoIP">Installasi VoIP</option>
+                        <option value="Maintenance jaringan">Maintenance jaringan</option>
+                        <option value="Perencanaan jaringan">Perencanaan jaringan</option>
+                        <option value="Keamanan jaringan">Keamanan jaringan</option>
+                    </select>
+
+                    <button type="button" onclick="submitForm();saveData()" >Submit</button>
+    
+                </form>
+            
+            
+                <div id="hasil"></div>
+            
+                
+            </div>
+            
+            
+        </div>
+
+
+
+        <!-- footer -->
+        <div class="footer">
+            <p>&copy; Copyright 2023 by SHIFUKATO</p>
+            <ul class="menu-footer">
+                <li><a href=""><img src="img/instagram.png" alt="Instagram" class="sosmed"></a> Instagram</li>
+                <li><a href=""><img src="img/facebook.png" alt="Instagram" class="sosmed"></a> Facebook</li>
+                <li><a href=""><img src="img/whatsapp.png" alt="Instagram" class="sosmed"></a> Whatsapp</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="js/script.js"></script>   
+</body>
+</html>
